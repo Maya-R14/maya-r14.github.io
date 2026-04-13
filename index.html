@@ -1,1 +1,173 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cool Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #111827;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    .section {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111827;
+      color: #64748b;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MySite</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Welcome to My Website</h2>
+    <p>A clean, modern, and responsive starter website you can customize however you want.</p>
+    <a class="btn" href="#features">Get Started</a>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Features</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Simple lightweight design with no frameworks required.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive</h3>
+        <p>Looks great on desktop, tablet, and mobile devices.</p>
+      </div>
+      <div class="card">
+        <h3>Customizable</h3>
+        <p>Easy to edit colors, text, and layout to match your style.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About</h2>
+    <p style="max-width:700px; margin:20px auto; color:#94a3b8;">
+      This is a starter template you can use for portfolios, projects, landing pages, or experiments.
+      Modify it freely and build something awesome.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 MySite. Built with plain HTML & CSS.
+  </footer>
+
+</body>
+</html>
